@@ -1,0 +1,721 @@
+@import url("https://fonts.googleapis.com/css2?family=Philosopher&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Katibeh&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lora", serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Philosopher", sans-serif;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-space {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  border: none;
+  background: none;
+  outline: none;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.primary-btn {
+  padding: 15px 40px;
+  background: #461468;
+  font-weight: bold;
+  border-radius: 10px;
+  font-family: "Philosopher", sans-serif;
+  color: white;
+}
+
+.secondary-btn {
+  padding: 15px 40px;
+  background: none;
+  border-radius: 10px;
+  border: 2px solid white;
+  font-family: "Philosopher", sans-serif;
+  font-weight: bold;
+  color: white;
+}
+
+.container {
+  max-width: 85%;
+  margin: auto;
+}
+
+header {
+  height: 10vh;
+  line-height: 10vh;
+  padding: 0 20px;
+}
+
+header img {
+  width: 50px;
+  height: 50px;
+  margin: 20px 0;
+  border-radius: 50%;
+}
+
+header ul {
+  display: inline-block;
+}
+
+header ul li {
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+header ul li a {
+  color: black;
+  margin: 0 10px;
+  transition: 1.5s;
+}
+
+header ul li a:hover {
+  text-decoration: underline;
+  color: #461468;
+}
+
+header i {
+  margin: 0 20px;
+}
+
+header button {
+  padding: 13px 40px;
+}
+
+header .nav span {
+  display: none;
+  font-size: 2em;
+  line-height: normal;
+}
+
+@media screen and (max-width: 768px) {
+  header ul {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #461468;
+    overflow: hidden;
+    transition: max-height 0.5s;
+    text-align: center;
+    z-index: 9;
+  }
+  header ul li {
+    display: block;
+  }
+  header ul li a {
+    color: white;
+  }
+  header i {
+    color: white;
+  }
+  header .nav span {
+    color: black;
+    display: block;
+    cursor: pointer;
+    line-height: 10vh;
+    font-size: 25px;
+  }
+}
+
+.home {
+  height: 100vh;
+  color: white;
+}
+
+.home img {
+  width: 100%;
+  height: 100vh;
+}
+
+.home .text {
+  position: absolute;
+  top: 35%;
+  left: 5%;
+}
+
+.home .text h1 {
+  font-size: 80px;
+  font-family: "Philosopher", sans-serif;
+  font-weight: 400;
+}
+
+.home p {
+  margin: 20px 0;
+}
+
+.home button {
+  margin-right: 20px;
+}
+
+.home .owl-nav .owl-prev,
+.home .owl-nav .owl-next {
+  position: absolute;
+  top: 30%;
+  height: 40px;
+  width: 40px;
+  background: #44156b !important;
+  color: white;
+}
+
+.home .owl-nav .owl-prev {
+  left: 0px;
+}
+
+.home .owl-nav .owl-next {
+  right: 0px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+}
+
+input {
+  outline: none;
+  border: none;
+  width: 100%;
+}
+
+.book {
+  padding: 40px 0;
+  background: #282834;
+  color: white;
+}
+
+h1 {
+  font-family: "Philosopher", sans-serif;
+}
+
+.book {
+  font-size: 28px;
+}
+
+.book h1 span {
+  color: #461468;
+}
+
+.book input {
+  padding: 20px;
+}
+
+.book input:nth-last-child(1) {
+  background-color: #461468;
+  color: white;
+  border-radius: 10px;
+}
+
+.left,
+.right {
+  width: 50%;
+  padding: 30px;
+}
+
+.top {
+  margin-top: 80px;
+}
+
+.mtop {
+  margin-top: 80px;
+}
+
+.heading h1 {
+  font-size: 100px;
+  font-weight: 500;
+  opacity: 0.1;
+  font-family: "Philosopher", sans-serif;
+  position: absolute;
+  top: -30px;
+}
+
+.heading h2 {
+  margin: 30px 0;
+  font-size: 45px;
+  line-height: normal;
+  font-family: "Philosopher", sans-serif;
+  font-weight: 400;
+}
+
+.about .heading h1 {
+  top: 55px;
+}
+
+.about {
+  position: relative;
+}
+
+.about .left {
+  margin-top: 30px;
+}
+
+.about .right img {
+  border-radius: 10px;
+}
+
+.about p {
+  font-size: 15px;
+}
+
+.about button {
+  margin: 30px 0;
+}
+
+.counter {
+  background-image: url(images/hotel4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 30vh;
+  width: 100%;
+  color: white;
+  opacity: 0.8;
+}
+
+.counter .grid {
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+  place-items: center;
+  padding-top: 60px;
+}
+
+.counter h1 {
+  font-size: 50px;
+}
+
+.counter hr {
+  width: 50%;
+  margin: 10px auto;
+  background: #461468;
+  height: 2px;
+  border: none;
+}
+
+.rooms {
+  position: relative;
+}
+
+.rooms .text {
+  border: 1px solid grey;
+  border-top: none;
+  padding: 30px;
+}
+
+.rooms i {
+  font-size: 12px;
+  color: #461468;
+  margin: 15px 0;
+  margin-right: 5px;
+}
+
+.rooms p {
+  margin: 20px 0;
+  opacity: 0.7;
+}
+
+.rooms h3 {
+  font-size: 30px;
+  line-height: 20px;
+  margin-left: 20px;
+  font-weight: 500;
+  color: #461468;
+}
+
+.rooms h3 span {
+  font-size: 15px;
+  font-weight: 400;
+  color: black;
+}
+
+.rooms img {
+  height: 300px;
+}
+
+.rooms .owl-nav .owl-prev,
+.rooms .owl-nav .owl-next {
+  position: absolute;
+  top: -20%;
+  height: 50px;
+  width: 50px;
+  background: #44156b !important;
+  color: white;
+}
+
+.rooms .owl-nav .owl-prev i,
+.rooms .owl-nav .owl-next i {
+  color: white;
+}
+
+.rooms .owl-nav .owl-prev {
+  left: 90%;
+}
+
+.rooms .owl-nav .owl-next {
+  right: 1px;
+}
+
+.gallery {
+  position: relative;
+}
+
+.gallery img {
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+}
+
+.gallery .img {
+  position: relative;
+}
+
+.gallery .img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #44156b;
+  width: 100%;
+  height: 250px;
+  z-index: 2;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.overlay {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  z-index: 3;
+  text-align: center;
+  color: white;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.gallery span {
+  text-align: center;
+  font-size: 25px;
+}
+
+.overlay h3 {
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+.gallery .items:hover .overlay,
+.gallery .items:hover .img::after {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.services {
+  position: relative;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+}
+
+.services .left {
+  padding: 30px 0;
+}
+
+.services .box {
+  border: 1px solid #461468;
+  text-align: center;
+  transition: 0.5s;
+  padding: 20px;
+}
+.services .box .text {
+  padding: 30px 0;
+  border: 1px dashed wheat;
+}
+
+.services i {
+  color: #461468;
+  font-size: 50px;
+  transition: 0.5s;
+}
+
+.services h3 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 20px;
+  transition: 0.5s;
+}
+
+.services img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.services .box:hover {
+  background: #461468;
+  color: white;
+  cursor: pointer;
+}
+
+.services .box:hover i,
+.services .box:hover h3 {
+  color: white;
+}
+
+.Customer {
+  background-image: url(images/banner1.jpg);
+  background-repeat: no-repeat;
+  background-size: fill;
+  height: 60vh;
+  width: 100%;
+  color: white;
+  text-align: center;
+  opacity: 0.7;
+}
+
+.Customer .container {
+  max-width: 70%;
+}
+
+.Customer .item {
+  margin-top: 50px;
+}
+
+.Customer i {
+  width: 80px;
+  height: 80px;
+  background: #44156b;
+  line-height: 80px;
+  border-radius: 50%;
+  font-size: 35px;
+  margin-bottom: 50px;
+  opacity: 1;
+}
+
+.Customer p {
+  line-height: 30px;
+  font-family: "Katibeh", cursive;
+  font-size: 30px;
+  opacity: 1;
+}
+
+.Customer h3 {
+  margin-top: 10px;
+  color: #44156b;
+  font-size: 35px;
+  font-weight: 700;
+  opacity: 1;
+}
+
+.Customer span {
+  font-size: 15px;
+}
+
+.owl-carousel2 .owl-dots i {
+  color: #461468;
+}
+
+.owl-carousel2 .owl-dots i:hover button {
+  color: #461468 !important;
+}
+
+.owl-carousel2 span {
+  border: 2px solid white;
+}
+
+.owl-carousel2 .active span {
+  border: 2px solid #461468;
+  background: #461468 !important;
+}
+
+.news {
+  position: relative;
+}
+
+.news i {
+  color: #461468;
+  text-transform: capitalize;
+  font-size: 18px;
+}
+
+.news label {
+  margin-top: 12px;
+  margin-right: 20px;
+}
+
+.news .left {
+  padding: 30px 0;
+  width: 65%;
+}
+
+.news .right {
+  width: 35%;
+}
+
+.news img {
+  width: 100%;
+}
+
+.news .items p {
+  padding-top: 20px;
+  border-top: 1px solid #461468;
+}
+
+.news .box {
+  border-bottom: 1px solid #461468;
+  padding: 40px 0;
+}
+
+.news .box:nth-child(1) {
+  padding-top: 0;
+}
+
+.news .box:nth-last-child(1) {
+  border-bottom: none;
+}
+
+.news .box img {
+  width: 110px;
+  height: 114px;
+}
+
+.news .stext {
+  padding: 0 0 0 20px;
+}
+
+.newsletter {
+  position: relative;
+}
+
+.newsletter .container {
+  background: #461468;
+  padding: 40px 30px;
+  position: absolute;
+  top: -70px;
+  left: 8%;
+  width: 100%;
+}
+
+.newsletter h1 {
+  width: 100%;
+  font-size: 30px;
+  color: white;
+  margin-top: 10px;
+}
+
+.newsletter input {
+  padding: 20px;
+}
+
+.newsletter input:nth-child(2) {
+  width: 80%;
+  background: #ffffff7c;
+  color: white;
+  font-family: "Philosopher", sans-serif;
+}
+
+.newsletter input::placeholder {
+  color: white;
+}
+
+.newsletter input:nth-last-child(1) {
+  font-family: "Philosopher", sans-serif;
+  border: 1px solid white;
+  cursor: pointer;
+  margin-left: 20px;
+  width: 30%;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: none;
+  color: white;
+}
+
+footer {
+  background: #282834;
+  color: white;
+  padding: 10% 0  5% 0 ;
+}
+
+footer .grid {
+  grid-template-columns: 6fr 3fr 3fr;
+}
+
+footer p {
+  color: white;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+footer .icon i {
+  margin: 20px 20px 20px 0;
+  color: white;
+}
+
+footer h2 {
+  margin-bottom: 10px;
+  color: white;
+}
+
+footer li {
+  margin-bottom: 20px;
+}
+
+footer a {
+  color: white;
+}
+
+footer i {
+  color: white;
+  margin: 20px 0;
+  margin-right: 20px;
+}
+
+footer label {
+  margin: 20px 0;
+}
+
+footer .logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.legal {
+  padding: 15px 0;
+  background: #282834;
+  color: white;
+  border-top: 1px solid white;
+}
+.legal .container{
+  margin-left: 600px;
+}
